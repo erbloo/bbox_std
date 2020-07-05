@@ -19,22 +19,6 @@ from models.inception import Inception_v3
 from utils.image_utils import load_image, save_image
 from utils.torch_utils import numpy_to_variable, variable_to_numpy
 
-import pdb                       
-
-# DR        : python script_generate_adversarial.py
-# DIM       : python script_generate_adversarial.py --adv-method dim --step-size 25.5 --steps 40
-# mi-FGSM   : python script_generate_adversarial.py --adv-method mifgsm --step-size 25.5 --steps 40
-# PGD       : python script_generate_adversarial.py --adv-method pgd --step-size 25.5 --steps 40
-
-# python script_generate_adversarial.py -tm inception_v3 --step-size 4 --steps 100
-
-# CUDA_VISIBLE_DEVICES=3 python script_generate_adversarial.py --adv-method dr -tm resnet152 --res152-attacklayer 5 --step-size 2 --steps 500 --batch-size 4
-
-# python script_generate_adversarial.py --dataset-dir /home/yantao/workspace/datasets/VOC2012_1000 -tm vgg16 --vgg16-attacklayer 14 --adv-method dr --loss-method selective_loss --step-size 4 --steps 100
-# python script_generate_adversarial.py --dataset-dir /home/yantao/workspace/datasets/VOC2012_1000 -tm inception_v3 --inc3-attacklayer 5 --adv-method dr --loss-method selective_loss --step-size 4 --steps 100
-# python script_generate_adversarial.py --dataset-dir /home/yantao/workspace/datasets/VOC2012_1000 -tm resnet152 --res152-attacklayer 5 --adv-method dr --loss-method selective_loss --step-size 4 --steps 100
-
-
 DEBUG = False
 
 def parse_args(args):
