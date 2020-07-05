@@ -14,23 +14,8 @@ from utils.image_utils import load_image, save_image, save_bbox_img
 from utils.mAP import save_detection_to_file, calculate_mAP_from_files
 from utils.torch_utils import numpy_to_variable, variable_to_numpy, convert_torch_det_output
 
-import pdb                       
 
-
-# python script_evaluate_detection_pytorch.py fasterrcnn --dataset-dir /home/yantao/workspace/datasets/VOC2012_1000
-
-
-PICK_LIST = [
-    'dr_vgg16_layerAt_14_eps_16_stepsize_1.0_steps_20_lossmtd_l1smooth_avg_loss',
-    'dr_vgg16_layerAt_14_eps_16_stepsize_1.0_steps_20_lossmtd_selective_loss',
-    'dr_vgg16_layerAt_14_eps_16_stepsize_1.0_steps_20_lossmtd_std',
-    'dr_inception_v3_layerAt_5_eps_16_stepsize_1.0_steps_20_lossmtd_l1smooth_avg_loss',
-    'dr_inception_v3_layerAt_5_eps_16_stepsize_1.0_steps_20_lossmtd_selective_loss',
-    'dr_inception_v3_layerAt_5_eps_16_stepsize_1.0_steps_20_lossmtd_std',
-    'dr_resnet152_layerAt_5_eps_16_stepsize_1.0_steps_20_lossmtd_l1smooth_avg_loss',
-    'dr_resnet152_layerAt_5_eps_16_stepsize_1.0_steps_20_lossmtd_selective_loss',
-    'dr_resnet152_layerAt_5_eps_16_stepsize_1.0_steps_20_lossmtd_std',
-]
+PICK_LIST = []
 BAN_LIST = []
 
 def parse_args(args):

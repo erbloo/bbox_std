@@ -18,9 +18,6 @@ from utils.image_utils import load_image, save_image
 from utils.torch_utils import numpy_to_variable, variable_to_numpy
 from utils.COCO2017_1000.mask_loader import load_masks as load_coco_masks
 
-import pdb
-
-# python script_evaluate_segmentation_gt_pytorch.py deeplabv3_resnet101 coco --dataset-dir /home/yantao/workspace/datasets/COCO2017_1000
 
 # {voc_idx : coco_idx}
 with open('utils/VOC_AND_COCO91_CLASSES.pkl', 'rb') as f:

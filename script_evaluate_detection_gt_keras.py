@@ -23,11 +23,6 @@ from utils.mAP import save_detection_to_file, calculate_mAP_from_files
 from utils.VOC2012_1000.annotation_loader import load_annotations as load_voc_annotations
 from utils.COCO2017_1000.annotation_loader import load_annotations as load_coco_annotations
 
-import pdb                       
-
-
-# python script_evaluate_detection_gt_keras.py yolov3 coco --dataset-dir /data1/yantao/DR_datasets/COCO2017_1000
-
 
 # {voc_idx : coco_idx}
 with open('utils/VOC_AND_COCO91_CLASSES.pkl', 'rb') as f:

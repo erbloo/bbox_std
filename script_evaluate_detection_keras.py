@@ -18,11 +18,6 @@ from models.ssd_mobilenet.SSD import SSD_detector
 from utils.image_utils import load_image, save_image, save_bbox_img
 from utils.mAP import save_detection_to_file, calculate_mAP_from_files
 
-import pdb                       
-
-
-# python script_evaluate_detection_keras.py yolov3 --dataset-dir /home/yantao/workspace/datasets/VOC2012_1000
-
 
 PICK_LIST = []
 BAN_LIST = []

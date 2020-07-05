@@ -18,10 +18,6 @@ from utils.torch_utils import numpy_to_variable, variable_to_numpy, convert_torc
 from utils.VOC2012_1000.annotation_loader import load_annotations as load_voc_annotations
 from utils.COCO2017_1000.annotation_loader import load_annotations as load_coco_annotations
 
-import pdb                       
-
-
-# python script_evaluate_detection_gt_pytorch.py fasterrcnn coco --dataset-dir /home/yantao/workspace/datasets/COCO2017_1000
 
 # {voc_idx : coco_idx}
 with open('utils/VOC_AND_COCO91_CLASSES.pkl', 'rb') as f:

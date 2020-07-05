@@ -14,11 +14,6 @@ from models.deeplabv3plus.modeling.deeplab import *
 from utils.image_utils import load_image, save_image
 from utils.torch_utils import numpy_to_variable, variable_to_numpy
 
-import pdb
-
-
-# python script_evaluate_segmentation_pytorch.py deeplabv3_resnet101 --dataset-dir /home/yantao/workspace/datasets/VOC2012_1000
-
 
 PICK_LIST = []
 BAN_LIST = []
